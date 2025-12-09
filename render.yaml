@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: lodha-twilio-auto-caller
+    env: node
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    plan: free
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: BASE_URL
+        sync: false
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_CALLER_ID
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "lodha-twilio-auto-caller",
+  "version": "1.0.0",
+  "description": "Lodha Group automated outbound calling backend using Twilio, Express, and SQLite.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "helmet": "^7.0.0",
+    "sqlite3": "^5.1.7",
+    "twilio": "^5.3.3"
+  }
+}
+
+
